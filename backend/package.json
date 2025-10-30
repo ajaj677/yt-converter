@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "ajajm677",
+  "license": "ISC",
+  "description": "converts yt video url into mp3 or mp4",
+  "dependencies": {
+    "express": "^5.1.0",
+    "yt-dlp-exec": "^1.0.2"
+  }
+}
