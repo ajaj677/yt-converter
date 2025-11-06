@@ -3,29 +3,62 @@
 *{
     margin: 0;
     padding: 0;
-    font: 'Momo Trust Display';
+    font-family: 'Noto Sans';
     box-sizing: border-box;
+    /* background-color: #F3F2EC; */
+}
+
+body{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F2EC;
 }
 
 .wrapper{
-    /* display: flex;
-    align-items: center; */
+    margin-top: 40dvh;
+    height: 300px;
+    width: 350px;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    flex-shrink: 3;
-    background-color: rgb(216, 216, 216);
+    background-color: #DCDCDC;
+    border: 1px solid rgba(0, 0, 0, 0.204);
+    border-radius: 10px;
 }
 
-button{
-    color: black;
-    border-radius: 5px;
-    padding: 3px 7px 3px 7px;
-    text-decoration: none;
-    background-color: rgb(217, 217, 217);
+.wrapper h2{
+    color: #E62727; 
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 25px;
 }
 
-input{
+.wrapper input{
+    width: 70%;
     border-radius: 5px;
     outline: none;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.646);
     margin: 5px;
-    padding: 3px 7px 3px 7px;
+    padding: 6px 10px;
+    
+}
+
+.cta-btn button{
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: #dedede;
+    border: 1px solid rgba(0, 0, 0, 0.646);
+}
+
+.button:hover {
+    background-color: #E9B3FB;
+    color: #3B0270;
+    border: 1px solid #3B0270;
 }
