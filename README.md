@@ -11,23 +11,19 @@ Download **YouTube videos in MP4** or **audio in MP3**
 Supports YouTube Shorts and full videos
 
 
-# ⚙️ Installation
+# Installation
 
 ```bash
 # Clone the repository
 git clone https://github.com/ajaj677/yt-converter.git
 cd yt-converter
-```
 
-## Setup frontend
-```bash
+# Setup frontend
 cd frontend
 npm install
 npm run build
-```
 
-## Setup backend
-```bash
+# Setup backend
 cd ../backend
 npm install
 node server.js
