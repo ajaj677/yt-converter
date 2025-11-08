@@ -21,14 +21,15 @@ app.use(express.json());
 const downloadPath = path.join(__dirname, "download");
 if (!fs.existsSync(downloadPath)) fs.mkdirSync(downloadPath);
 
-// Serve frontend (optional)
-app.use(express.static(path.join(__dirname, "..", "frontend")));
+// == Serve react frontend (vita build) ===
+const frontendPath = path.join(__dirname, "..", "frontend", "dist");
+app.use(express.static(frontendPath));
 
 // === Routes ===
 
 // Root route
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "frontend",));
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(frontendPath, "index.html"));
 });
 
 // Download video (MP4)
