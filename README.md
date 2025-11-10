@@ -11,53 +11,29 @@ Download **YouTube videos in MP4** or **audio in MP3**
 Supports YouTube Shorts and full videos
 
 
-## Installation & Setup
-
-### 1. Clone the repository
+# Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/ajaj677/yt-converter.git
-```
-```
-cd yt-converter/backend
-```
+cd yt-converter
 
-### 2. Install dependencies
-
-```bash
+# Setup frontend
+cd frontend
 npm install
-```
+npm run build
 
-### 3. Ensure `yt-dlp` is installed
-
-```bash
-npm install yt-dlp-exec
-```
-
-### 4. Start the server
-
-```bash
+# Setup backend
+cd ../backend
+npm install
 node server.js
 ```
 
-Server will start at:
-
-```
-http://localhost:5000
-```
-
----
+> The app will start on **[http://localhost:5000](http://localhost:5000)**
 
 ## 🤝 Contributing
 Contributions are welcome!
-To contribute:
-
-
 
 ## ⚠️ Disclaimer
 This project is for **educational purposes only**.
 Downloading copyrighted content without permission may violate YouTube’s Terms of Service.
-
-
-
-🧑‍💻 Author **Ajaj**
