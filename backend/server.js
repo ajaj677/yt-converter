@@ -48,7 +48,7 @@ app.post("/download/video", async (req, res) => {
     console.log(" Video downloaded:", output);
 
     res.download(output, () => {
-    //   fs.unlinkSync(output); // delete after sending (for cloud)
+      fs.unlinkSync(output); // delete after sending (for cloud)
     });
   } catch (err) {
     console.error("Error downloading video:", err);
@@ -73,7 +73,7 @@ app.post("/download/music", async (req, res) => {
     console.log("Audio downloaded:", output);
 
     res.download(output, () => {
-    //   fs.unlinkSync(output); (for cloud)
+      fs.unlinkSync(output); (for cloud)
     });
   } catch (err) {
     console.error("Error downloading audio:", err);
@@ -82,5 +82,5 @@ app.post("/download/music", async (req, res) => {
 });
 
 app.listen(port, "0.0.0.0", () => {
-  console.log(`🚀 Server running at PORT : ${port}`);
+  console.log(`Server running at PORT : ${port}`);
 });
